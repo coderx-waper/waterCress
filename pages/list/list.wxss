@@ -1,0 +1,12 @@
+.contanier {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30rpx;
+}
+
+.item {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30rpx;
+}

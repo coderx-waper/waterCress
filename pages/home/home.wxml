@@ -1,0 +1,31 @@
+<nav-bar title="首页"
+         statusBarColor="#42BD55"
+         navBarColor="#42BD55"
+></nav-bar>
+
+
+<view>
+    <view class="search-wrapper">
+        <view class="search">
+            <image class="image" src="/assets/imgs/ic_search.png" />
+            搜索
+        </view>
+    </view>
+    <view class="main">
+        <view wx:for="{{ allMovies }}" wx:key="unqie" class="row">
+            <view class="title-wrapper">
+                <view class="left">{{item.title}}</view>
+                <view class="right" bind:tap="watchMoreMovies" data-index="{{index}}">
+                    <view>查看更多</view>
+                    <view class="arrow"></view>
+                </view>
+            </view>
+            <view class="items">
+                <scroll-view class="scroll-view" scroll-x="true">
+                    <movie-item class="item" wx:for="{{item.movies}}" wx:for-item="movie" movie="{{movie}}"
+                     wx:key="index"></movie-item>
+                </scroll-view>
+            </view>
+        </view>
+    </view>
+</view>

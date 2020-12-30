@@ -1,0 +1,35 @@
+.container {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    font-weight: bold;
+    position: relative;
+}
+
+.icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30rpx;
+}
+
+.icons image {
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.home {
+    margin-left: 30rpx;
+}

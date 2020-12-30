@@ -1,0 +1,149 @@
+page{
+    flex: 1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login-wrapper {
+    height: 400rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.login-wrapper .login {
+    width: 45%;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 50rpx;
+    background-color: #fff;
+    text-align: center;
+    font-size: 46rpx;
+    color: #19432D;
+    box-shadow: 2rpx 2rpx 10rpx 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-wrapper image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.version {
+    font-size: 24rpx;
+    position: absolute;
+    bottom: 50rpx;
+    color: #C9C9C9;
+    width: 100%;
+    text-align: center;
+}
+
+.items-wrapper {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.items-wrapper .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-wrapper .title-wrapper .title {
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.title-wrapper .subTitle-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.title-wrapper .subTitle-wrapper .subTitle {
+    color: rgb(148, 148, 148);
+}
+
+.items-wrapper .arrow {
+    width: 20rpx;
+    height: 20rpx;
+    border-right: 1px solid rgb(148, 148, 148);
+    border-bottom: 1px solid rgb(148, 148, 148);
+    transform: rotate(-45deg);
+}
+
+.items-wrapper .item {
+    display: flex;
+    align-items: center;
+    margin-top: 20rpx;
+
+}
+
+.item :last-of-type .divider {
+    display: none;
+}
+
+.info-wrapper {
+    flex: 1;
+}
+
+.info-wrapper .info {
+    display: flex;
+    align-items: center;
+    margin: 20rpx 0;
+}
+
+.items-wrapper .item .icon {
+    width: 80rpx;
+    height: 80rpx;
+    margin-right: 20rpx;
+}
+
+.info-wrapper .bottom {
+    display: flex;
+    align-items: center;
+    color: #7C7C7C;
+}
+
+.info-wrapper .bottom .counter {
+    margin-right: 10rpx;
+    font-size: 48rpx;
+}
+
+.items .info .top {
+    margin-bottom: 20rpx;
+}
+
+.info-wrapper .info .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+.info-wrapper .right .text {
+    color: #C6C6C6;
+    margin-right: 30rpx;
+}
+
+.info-wrapper .right .begin {
+    background: #F6F6F6;
+    padding: 10rpx 15rpx;
+    border-radius: 10rpx;
+    color: #484848;
+}
+
+.info-wrapper .divider {
+    background: rgba(0, 0, 0, 0.1);
+    height: 1rpx;
+}
+
+.info .bottom .text {
+    margin-bottom: -5rpx;
+}
