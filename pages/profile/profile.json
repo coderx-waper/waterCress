@@ -1,4 +1,5 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "书影音档案"
+  "usingComponents": {
+    "nav-bar":"/components/nav-bar/nav-bar"
+  }
 }

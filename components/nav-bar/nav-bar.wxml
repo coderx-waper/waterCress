@@ -1,8 +1,8 @@
 <view>
-  <view style="height: 120px;"></view>
+  <view style="height:{{topHeight}}px"></view>
   <view class="container">
     <view style="{{ statusBarStyle }}"></view>
-    <view class="navBar" style="{{ navBarStyle }}">
+    <view class="nav-bar" style="{{ navBarStyle }}">
       {{ title }}
       <view class="icons">
         <image bind:tap="back" wx:if="{{ back == 'true' }}" class="back" src="/assets/imgs/nav_back.png" />

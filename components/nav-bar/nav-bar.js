@@ -15,38 +15,58 @@ Component({
       type: String,
       value: '#fff'
     },
+    back:{
+      type: String,
+      value: 'true'
+    },
+    home:{
+      type: String,
+      value: 'true'
+    },
+    color:{
+      type: String,
+      value: '#1C1C1C'
+    },
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    statusBarStyle: '',
-    navBarStyle: '',
-    topHeight: 0,
+    topHeight:0
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    lifetimes: {
-      attached() {
-        const statusBarStyle = `
-        height: ${wx.db.statusHeight} px;
-        background-color: ${this.data.statusBarColor};   
-        `
-        const navBarStyle = `
-        height: ${wx.db.navBarHeight} px;
-        background-color: ${this.data.navBarColor};
-        `
+    back(){
+      wx.navigateBack()
+    },
+    home(){
+      wx.navigateBack({
+        delta: 999,
+      })
+    }
+  },
 
-        this.setData({ statusBarStyle, navBarStyle })
+  lifetimes: {
+    attached() {
+      
+      const statusBarStyle = `
+      height: ${wx.db.statusBarHeight}px;
+      background-color: ${this.data.statusBarColor};   
+      `
+      const navBarStyle = `
+      height: ${wx.db.navBarHeight}px;
+      background-color: ${this.data.navBarColor};
+      color:${this.data.color}
+      `
 
-        const topHeight = wx.db.statusHeight + wx.db.navBarHeight
+      const topHeight = wx.db.statusBarHeight +  wx.db.navBarHeight
 
-        this.setData({ topHeight })
-      }
+      this.setData({statusBarStyle,navBarStyle,topHeight})
+    
     }
   }
 })

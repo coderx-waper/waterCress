@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    movies: []
+    movies: [],
+    title:''
   },
 
   /**
@@ -14,7 +15,8 @@ Page({
   onLoad: function (options) {
     wx.setNavigationBarTitle({ title: options.title })
     this.setData({
-      movies: wx.getStorageSync(options.title)
+      movies: wx.getStorageSync(options.title),
+      title:options.title
     })
   },
 })

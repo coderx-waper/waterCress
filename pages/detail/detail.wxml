@@ -1,2 +1,2 @@
-<!--pages/detail/detail.wxml-->
-<text>影片详情</text>
+<nav-bar title="{{title}}" ></nav-bar>
+

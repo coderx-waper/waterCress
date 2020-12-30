@@ -35,7 +35,7 @@
 }
 
 .title-wrapper .right {
-    color:#42BD55;
+    color: #42BD55;
 }
 
 .title-wrapper .right .arrow {
@@ -55,6 +55,15 @@
     white-space: nowrap;
 }
 
-.item{
+.item {
     margin-left: 30rpx;
+}
+
+.items:last-of-type {
+    margin-right: 30rpx;
+}
+
+.row {
+    height: 382rpx;
+    margin-bottom: 30rpx;
 }

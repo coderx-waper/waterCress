@@ -1,3 +1,4 @@
+<nav-bar title="{{title}}" ></nav-bar>
 <view class="contanier">
     <view class="item" wx:for="{{movies}}" wx:for-item="movie" wx:key="index">
         <movie-item  movie="{{movie}}"></movie-item>

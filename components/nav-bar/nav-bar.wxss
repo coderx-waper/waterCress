@@ -3,10 +3,9 @@
     top: 0;
     z-index: 999;
     width: 100%;
-    background-color: rebeccapurple;
 }
 
-.navBar {
+.nav-bar {
     display: flex;
     justify-content: center;
     align-items: center;

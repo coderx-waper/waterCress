@@ -28,6 +28,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": false,
@@ -40,7 +41,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
   "appid": "wx569520dc2b8cac1a",
-  "projectname": "WaterCress",
+  "projectname": "waterCress",
   "debugOptions": {
     "hidedInDevtools": []
   },
