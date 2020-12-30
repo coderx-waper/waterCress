@@ -22,7 +22,9 @@
     - ┣━ nav-bar 自定义导航栏组件
 
 - screen 小程序实现的效果图
-
+    - ![https://github.com/coderx-waper/waterCress/blob/main/screen/home.png] 
+    - ![https://github.com/coderx-waper/waterCress/blob/main/screen/more.png] 
+    - ![https://github.com/coderx-waper/waterCress/blob/main/screen/profile.png] 
 
 - utils 工具包
     - util.js 工具函数
